@@ -28,7 +28,7 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.post("http://localhost:8000/chat", { prompt });
+      const response = await axios.post("https://business-conversational-ai.onrender.com", { prompt });
       const newItem: DashboardItem = {
         ...response.data,
         id: Date.now().toString()
