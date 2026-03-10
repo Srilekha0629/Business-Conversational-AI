@@ -4,8 +4,7 @@ import os
 from typing import Dict, Any
 
 # Configure Gemini
-# Ensure to have GOOGLE_API_KEY environment variable.
-genai.configure(api_key="AIzaSyCgYOf4RqvwL90HHtvcUcRu56pJNP0VxlQ")
+genai.configure(api_key="") #keep api key here!
 
 class GeminiSQLAgent:
     def __init__(self, schema_description: str):
